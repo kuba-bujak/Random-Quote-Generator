@@ -1,0 +1,86 @@
+@import 'config';
+
+body {
+	background-color: $color1;
+	color: $color1;
+	height: 100vh;
+	font-family: 'Raleway', sans-serif;
+	line-height: 1;
+	display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+h1, h2, h3 {
+	font-weight: 400;
+}
+
+a {
+	color:#ffffff;
+	text-decoration: underline;
+}
+
+.wrapper {
+	width: 30vw;
+}
+
+#quote-box {
+	background-color: #ffffff;
+	border-radius: 5px;
+	padding: 40px;
+	margin-bottom: 1rem;
+	box-shadow: 4px 4px 12px 0px rgb(100, 102, 126);
+
+	.quote__text {
+		font-size: 2rem;
+		font-weight: 600;
+		line-height: 2.4rem;
+		text-align: justify;
+		margin-bottom: 2rem;
+
+		i {
+			font-size: 2.6rem;
+		}
+
+		#text {
+			margin-left: 0.2rem;
+		}
+	}
+
+	.quote__author {
+		display: flex;
+		justify-content: end;
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+
+		&::before {
+			content: "- ";
+	
+		}
+	}
+
+	.buttons {
+		display: flex;
+		justify-content: space-between;
+
+		.button {
+			border: none;
+			background-color: $color1;
+			color: #ffffff;
+			padding: 1rem;
+			border-radius: 4px;
+			font-size: 1.1rem;
+			cursor: pointer;
+
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+	}
+}
+
+footer {
+	color: #ffffff;
+	text-align: center;
+}
+
