@@ -7,7 +7,7 @@ createQuote()
 	.catch(err => console.log(err));
 
 async function createQuote() {
-	const postStream = await fetch('https://github.com/kuba-bujak/Random-Quote-Generator/blob/main/quotes.json);
+	const postStream = await fetch('https://github.com/kuba-bujak/Random-Quote-Generator/blob/main/quotes.json');
 	const colorStream = await fetch('https://github.com/kuba-bujak/Random-Quote-Generator/blob/main/colors.json');
 	const colors = await colorStream.json()
 	const posts = await postStream.json();
